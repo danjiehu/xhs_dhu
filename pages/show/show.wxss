@@ -12,10 +12,9 @@ page {
   box-sizing: border-box;
 }
 
-.image {
-  height: 40vh;
+.img-full {
   width: 100%;
-  background-color: #f1f1f0;
+  /* background-color: #f1f1f0; */
   border-radius: 72rpx 72rpx 0 0;
 }
 
@@ -25,6 +24,11 @@ page {
   background-color: white;
 }
 
+.heart-icon {
+  height: 46rpx;
+  width: 46rpx;
+}
+
 .meta-flex-box {
   display: flex;
   justify-content: space-between;
@@ -32,16 +36,17 @@ page {
 }
 
 .user-details {
+  margin-bottom: 20rpx;
   display: flex;
   align-items: center;
 }
 
 .user-avatar {
-  height: 100rpx;
-  width: 100rpx;
+  height: 50rpx;
+  width: 50rpx;
   border-radius: 50%;
-  background-color: #f1f1f0;
-  margin-right: 20rpx;
+  /* background-color: #f1f1f0; */
+  margin: 0 20rpx 0 0;
 }
 
 .user-name {
@@ -55,7 +60,7 @@ page {
 }
 
 .likes-count {
-  padding-right: 20rpx;
+  padding-right: 10rpx;
 }
 
 .post-title {
@@ -104,12 +109,14 @@ page {
   position: relative;
   left: 5%;
   top: -80rpx;
+  width: 46rpx;
+  height: 46rpx;
 }
 
 .feedback-card {
   width: 100vw;
   box-sizing: border-box;
-  height: 20vh;
+  /* height: 20vh; */
   border-radius: 80rpx;
   padding: 40rpx;
   background-color: white;
@@ -131,7 +138,7 @@ page {
   height: 60rpx;
   width: 60rpx;
   border-radius: 50%;
-  background-color: #f1f1f0;
+  /* background-color: #f1f1f0; */
   margin-right: 20rpx;
 }
 
@@ -150,4 +157,15 @@ page {
   font-weight: 400;
   font-size: 9pt;
   color: #ADADAD;
+}
+
+input {
+  font-size: 11pt;
+  padding-bottom: 20rpx;
+}
+
+.new-comment-flexbox {
+  display: flex;
+  align-content: baseline;
+  padding: 20rpx;
 }
