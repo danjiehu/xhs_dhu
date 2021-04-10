@@ -48,12 +48,14 @@
 
 
   "window":{
+
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "Weixin",
-    "navigationBarTextStyle":"black",
-    "navigationStyle": "custom"
+    "navigationBarTitleText": "xhs_dhu",
+    "navigationBarTextStyle":"black"
+ 
   },
+
   "style": "v2",
   "sitemapLocation": "sitemap.json",
   "plugins": {

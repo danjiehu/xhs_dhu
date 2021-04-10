@@ -1,12 +1,20 @@
 <!--pages/home/home.wxml-->
+
+<view>
+  
+  <search-bar clear show-cancel value="{{ value }}" controlled placeholder="Search" bind:change="onChange" bind:focus="onFocus" bind:blur="onBlur" bind:confirm="onConfirm" bind:clear="onClear" bind:cancel="onCancel" />
+
+</view>
+
 <view class="top-menu">
   <view class="button black">For you</view>
   <view class="button white">Following</view>
 </view>
 
+
 <view class="cards-masonry">
   <view wx:for="{{posts}}" wx:key="key" wx:for-item="post">
-    <view class="card" data-id="{{post.id}}" bindtap="navigateToPost">
+    <view class="card" data-postID="{{post.id}}" bindtap="navigateToPost">
       <image mode="widthFix" class="img-full" src="{{post.img_1.path}}"></image>
       <view class="user-likes">
         <image class="heart-icon" src="/images/like.png"></image>
